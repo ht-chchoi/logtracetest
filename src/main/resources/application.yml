@@ -1,0 +1,18 @@
+server:
+  port: 30300
+spring:
+  application:
+    name: sleuthTest
+  rsocket:
+    server:
+      port: 30400
+  sleuth:
+    rsocket:
+      enabled: true
+
+logging:
+  level:
+    root: info
+    io:
+      rsocket:
+        FrameLogger: DEBUG
